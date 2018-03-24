@@ -1,0 +1,83 @@
+<HtML>
+<HEAD><link rel="stylesheet" type="text/css" href="style.css">
+<TITLE>TO-DO LIST
+</TITLE>
+
+</HEAD>
+<BODY>
+<table width="100%" border = "0">
+         
+         <tr>
+            <td colspan = "2" bgcolor = "#b5dcb3">
+<h2><center>TO-DO LIST</center></h2><th></tr></table>
+<b><i><p id="day" align="center"></p></i></b>
+<b><i><p id="date" align="center"></p></i></b>
+<b><i><p id="year" align="center"></p></i></b>
+<div><center><input type="text"id="add"></center></div>
+<table id="tablee"cellspacing="10" width="50%" align="center" cellpadding="10" >
+
+<tr>
+<th>
+
+Buy a new sweat shirt</th>
+<th><label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label></th></tr>
+
+
+<tr><th>Begin Promotional Phase</th>
+<th><label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label></th></tr>
+
+<tr><th>Read an Article</th>
+<th><label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label></th></tr>
+
+<tr><th>Try not to fall asleep</th>
+<th><label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label></th></tr>
+
+<tr><th>Watch 'Sherlock'</th>
+<th><label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label></th></tr>
+
+<tr><th>Begin QA for the product</th>
+<th><label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label></th></tr>
+<tr><th>Go for a walk</th>
+<th><label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label></th></tr>
+</table>
+<center><button class="button button5"onclick="clickMe()">+</button></center>
+<script type = "text/javascript">            
+var d = new Date();
+var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+document.getElementById("day").innerHTML = days[d.getDay()];
+  document.getElementById("date").innerHTML = d.getDate();
+document.getElementById("year").innerHTML = d.getFullYear();
+
+function clickMe() {
+    var tabl= document.getElementById("tablee");
+    var row = tabl.insertRow(0);
+    var cella = row.insertCell(0);
+    var cellb = row.insertCell(1);
+
+var x = document.getElementById("add").value;
+    cella.innerHTML = x;
+    cellb.innerHTML = ""}
+        </script>
+</BODY>
+</HTML>
